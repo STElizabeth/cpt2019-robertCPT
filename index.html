@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>South Park Quiz</title>
+    <script src="trivia.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body LINK="F7DD5E" VLINK="F7DD5E" ALINK="F7DD5E" onLoad="main()">
+    <div class="sign">
+      <h2>South Park Trivia Quiz</h2>
+    </div>
+    <br />
+    <FORM name="view">
+      Question: &nbsp;<input type="text" name="qnum" size="2" />&nbsp;<input
+        type="button"
+        name="go"
+        value=" Next Question"
+        onClick="main()"
+      />
+      <br />
+      <br />
+      Answer:&nbsp;&nbsp;&nbsp;
+      <input type="text" id="qans" size="2" />&nbsp;<input
+        type="button"
+        value="Submit Answer"
+        onClick="submitAnswer()"
+      />
+      <br />
+      <br />
+      Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+        type="number"
+        id="qscore"
+        name="qscore"
+        size="2"
+      />
+      <br />
+      <br />
+      <TEXTAREA COLS="31" ROWS="9" id="question" wrap="virtual"></TEXTAREA>
+    </FORM>
+  </body>
+</html>
